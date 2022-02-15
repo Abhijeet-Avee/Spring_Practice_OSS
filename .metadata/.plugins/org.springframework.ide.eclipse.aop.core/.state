@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="05_BankApp_xml"/>
+<aop-project name="06_BankApp_annotations"/>
+<aop-project name="03_DI_Annotations"/>
+<aop-project name="02_Need_of_DI"/>
+<aop-project name="01_Need_of_Spring"/>
+<aop-project name="08_BankApp_javaconfig_@bean"/>
+<aop-project name="04_DI_javaconfig"/>
+<aop-project name="07_BankApp_javaconfig"/>
+<aop-project name="09_xml_collection_mapping"/>
+</aop-reference-model>

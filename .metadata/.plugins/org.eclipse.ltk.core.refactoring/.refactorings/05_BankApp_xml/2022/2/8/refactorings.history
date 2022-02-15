@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;05_BankApp_xml/src/main/resources/spring_config.xml&apos; to &apos;bank.xml&apos;" description="Rename resource &apos;spring_config.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/resources/spring_config.xml" name="bank.xml" stamp="1644949282906" updateReferences="true"/>
+</session>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
+
+	<bean id="sch" class="com.demo.School">
+		<property name="schoolName" value="abc"/>
+		<property name="teacherMap">
+			<map>
+				<entry key="physics" value-ref="t1"></entry>
+				<entry key="chem" value-ref="t2"></entry>
+				<entry key="maths" value-ref="t3"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<bean id="t1" class="com.demo.Teacher">
+		<property name="id" value="123"/>
+		<property name="name" value="MK"/>
+		<property name="salary" value="90565.99"/>
+	</bean>
+
+
+	<bean id="t2" class="com.demo.Teacher">
+		<property name="id" value="123"/>
+		<property name="name" value="AK"/>
+		<property name="salary" value="90565.99"/>
+	</bean>
+	
+	<bean id="t3" class="com.demo.Teacher">
+		<property name="id" value="123"/>
+		<property name="name" value="UR"/>
+		<property name="salary" value="90565.99"/>
+	</bean>
+	
+
+	<bean id="c" class="com.demo.CountryWithMap">
+		<property name="countryName" value="In" />
+		<property name="touristSpot">
+			<map>
+				<entry key="delhi" value-ref="delhiTp" />
+				<entry key="chennai" value-ref="chennaiTp" />
+			</map>
+		</property>
+	</bean>
+	<util:list list-class="java.util.ArrayList" id="delhiTp">
+		<value>lal kila</value>
+		<value>Q M</value>
+	</util:list>
+
+	<util:list list-class="java.util.ArrayList" id="chennaiTp">
+		<value>temples1</value>
+		<value>temples2</value>
+	</util:list>
+
+
+
+	<bean id="c2" class="com.demo.Country">
+		<property name="countryName" value="In" />
+		<property name="touristSpot">
+			<props>
+				<prop key="Delhi">chandnichowk</prop>
+				<prop key="UP">agra</prop>
+				<prop key="Chennai">abc</prop>
+			</props>
+		</property>
+	</bean>
+
+
+
+	<bean id="shape" class="com.demo.Shape">
+		<property name="points">
+			<list>
+				<ref bean="pointA" />
+				<ref bean="pointB" />
+				<ref bean="pointC" />
+			</list>
+		</property>
+	</bean>
+
+
+
+	<bean id="tri" class="com.demo.Triangle">
+		<property name="pointA" ref="pointA" />
+		<property name="pointB" ref="pointB" />
+		<property name="pointC" ref="pointC" />
+	</bean>
+	<bean id="pointA" class="com.demo.Point">
+		<property name="x" value="1" />
+		<property name="y" value="2" />
+	</bean>
+
+	<bean id="pointB" class="com.demo.Point">
+		<property name="x" value="10" />
+		<property name="y" value="20" />
+	</bean>
+
+	<bean id="pointC" class="com.demo.Point">
+		<property name="x" value="10" />
+		<property name="y" value="20" />
+	</bean>
+</beans>

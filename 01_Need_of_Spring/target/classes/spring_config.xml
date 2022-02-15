@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- bean wiring? : sigleton dp-->
+	<bean id="car" class="com.demo.Car" scope="prototype">
+		<constructor-arg index="0" ref="tyre"/>
+		<constructor-arg index="1" ref="engine"/>
+	</bean>
+	
+	<bean id="tyre" class="com.demo.MrfTyre"/>
+	<bean id="engine" class="com.demo.TurboEngine"/> 
+
+</beans>
