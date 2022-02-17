@@ -1,0 +1,44 @@
+INFO  | 2022-02-17 09:43:03 | [main] service.AccountServiceImpl (AccountServiceImpl.java:44) - time taken to execute getAll(): 233
+INFO  | 2022-02-17 09:53:49 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  getAll263
+INFO  | 2022-02-17 09:55:36 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  addAccount: 270
+INFO  | 2022-02-17 10:32:23 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  getAll: 282
+INFO  | 2022-02-17 10:38:30 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  getAll: 302
+INFO  | 2022-02-17 10:39:13 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  addAccount: 293
+INFO  | 2022-02-17 12:01:51 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:01:51 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:01:51 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:01:51 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-02-17 12:01:52 | [main] internal.SchemaCreatorImpl (SchemaCreatorImpl.java:489) - HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@19ccca5'
+WARN  | 2022-02-17 12:01:52 | [main] support.AbstractApplicationContext (AbstractApplicationContext.java:559) - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'accountDaoImplUsingJdbcTemplate' defined in file [/home/raj/Documents/ymsli_jan_22/spring/25.bankapp_hib_spring/target/classes/com/bankapp/model/dao/AccountDaoImplUsingJdbcTemplate.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.jdbc.core.JdbcTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+INFO  | 2022-02-17 12:02:59 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:02:59 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:02:59 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:02:59 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-02-17 12:04:44 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:04:44 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:04:44 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:04:45 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+WARN  | 2022-02-17 12:04:46 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:129) - SQL Error: 0, SQLState: S1009
+ERROR | 2022-02-17 12:04:46 | [main] spi.SqlExceptionHelper (SqlExceptionHelper.java:131) - Connection is read-only. Queries leading to data modification are not allowed
+INFO  | 2022-02-17 12:05:31 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:05:31 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:05:31 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:05:31 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-02-17 12:05:32 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  addAccount: 29
+INFO  | 2022-02-17 12:05:32 | [main] aspect.LggingAspect (LggingAspect.java:25) - time taken to execute  addAccount: 1
+INFO  | 2022-02-17 12:05:57 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:05:57 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:05:57 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:05:57 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-02-17 12:06:51 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:06:51 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:06:51 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:06:51 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-02-17 12:25:23 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:25:23 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:25:23 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:25:23 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+INFO  | 2022-02-17 12:29:07 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-17 12:29:07 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-17 12:29:07 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-17 12:29:08 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect

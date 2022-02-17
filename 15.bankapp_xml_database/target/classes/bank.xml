@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<!-- <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:db.properties"></property>
+	</bean> -->
+	
+	<context:property-placeholder location="classpath:db.properties"/>
+	<bean id="accountService" class="com.bankapp.model.service.AccountServiceImpl">
+		<constructor-arg index="0" ref="dao2"/>
+		<property name="smsService" ref="smsService"/>
+	</bean>
+	
+	<bean id="smsService" class="com.bankapp.model.service.SendSmsServiceImpl"></bean>
+	
+	<bean id="dao1" class="com.bankapp.model.dao.AccountDaoImpl"/>
+	<bean id="dao2" class="com.bankapp.model.dao.AccountDaoImplJdbc">
+		<constructor-arg index="0" ref="dataSource"/>
+	</bean>
+		
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="url" value="${jdbc.url}"/>
+		<property name="driverClassName" value="${jdbc.driverName}"/>
+		<property name="username" value="${jdbc.username}"/>
+		<property name="password" value="${jdbc.password}"/>
+	</bean>
+	
+</beans>

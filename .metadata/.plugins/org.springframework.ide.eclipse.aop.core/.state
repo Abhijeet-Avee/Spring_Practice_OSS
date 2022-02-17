@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
-<aop-project name="05_BankApp_xml"/>
-<aop-project name="06_BankApp_annotations"/>
 <aop-project name="03_DI_Annotations"/>
+<aop-project name="10_bean_life_cycle_"/>
 <aop-project name="02_Need_of_DI"/>
+<aop-project name="17.bankapp_annotation_database_javaconfig"/>
 <aop-project name="01_Need_of_Spring"/>
 <aop-project name="08_BankApp_javaconfig_@bean"/>
 <aop-project name="04_DI_javaconfig"/>
+<aop-project name="15.bankapp_xml_database"/>
+<aop-project name="13_property_placeholder_configurer"/>
+<aop-project name="05_BankApp_xml"/>
+<aop-project name="06_BankApp_annotations"/>
+<aop-project name="11_bean_life_cycle_aware"/>
+<aop-project name="21.need_of_log4j"/>
+<aop-project name="12_bean_post_processor"/>
+<aop-project name="16.bankapp_annotation_database"/>
+<aop-project name="20.a.need_of_aop">
+<aspect-definition advice-class-name="com.demo.Audiance" advice-method-name="aroundAdvice(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="11" aspect-name="audiance" aspect-start-line-number="11" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/20.a.need_of_aop/src/main/resources/demo.xml" pointcut-expression="execution(public void doMagic())" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:20.a.need_of_aop|3:src/main/resources/demo.xml|7:beans:8|8:magician:8" bean-file="/20.a.need_of_aop/src/main/resources/demo.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/20.a.need_of_aop/src/main/resources/demo.xml" source="=20.a.need_of_aop/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo{Audiance.java[Audiance~aroundAdvice~QProceedingJoinPoint;" source-start-line="18" target="=20.a.need_of_aop/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo{Magician.java[Magician~doMagic" target-start-line="8"/>
+</aspect-definition>
+</aop-project>
+<aop-project name="20.b.need_of_aop_ann">
+<aspect-definition advice-class-name="com.demo.Audiance" advice-method-name="aroundAdvice(org.aspectj.lang.ProceedingJoinPoint)" advice-type="AROUND" aspect-end-line-number="11" aspect-name="audiance" aspect-start-line-number="11" factory-id="org.springframework.ide.eclipse.aop.core.annotationAspectDefinitionElementFactory" file="/20.b.need_of_aop_ann/src/main/resources/demo.xml" pointcut-expression="execution(public void doMagic())" proxy-target-class="false">
+<aop-reference advice-type="AROUND" bean="1:BeansModel|2:20.b.need_of_aop_ann|3:src/main/resources/demo.xml|7:beans:8|8:magician:8" bean-file="/20.b.need_of_aop_ann/src/main/resources/demo.xml" bean-start-line="8" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/20.b.need_of_aop_ann/src/main/resources/demo.xml" source="=20.b.need_of_aop_ann/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo{Audiance.java[Audiance~aroundAdvice~QProceedingJoinPoint;" source-start-line="18" target="=20.b.need_of_aop_ann/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.demo{Magician.java[Magician~doMagic" target-start-line="8"/>
+</aspect-definition>
+</aop-project>
 <aop-project name="07_BankApp_javaconfig"/>
 <aop-project name="09_xml_collection_mapping"/>
 </aop-reference-model>

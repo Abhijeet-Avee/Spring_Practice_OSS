@@ -104,4 +104,26 @@
 		<item value="org.springsource.sts.package:3.9.12.202003181024-RELEASE-e415"/>
 		<item value="org.springsource.sts:3.9.12.202003181024-RELEASE"/>
 	</list>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\ve00ym318\Documents\spring practice\21.need_of_log4j2"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\21.need_of_log4j"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\20.b.need_of_aop_ann"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\20.a.need_of_aop"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\19.profile_helloworld_xml"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\18.profile_helloworld"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\17.bankapp_annotation_database_javaconfig"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\16.bankapp_annotation_database"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\15.bankapp_xml_database"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\13_property_placeholder_configurer\src\main\resources\lifecycle.xml"/>
+		</list>
+	</section>
 </section>
