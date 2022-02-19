@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="bookService" class="com.bookapp.model.service.BookServiceImpl">
+		<constructor-arg index="0" ref="dao"/>
+	</bean>
+	
+	<bean id="dao" class="com.bookapp.model.dao.BookDaoImpl">
+		<property name="booksMap">
+			<map>
+				<entry key="01" value-ref="b1"></entry>
+				<entry key="02" value-ref="b2"></entry>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="b1" class="com.bookapp.model.dao.Book">
+		<property name="id" value="01"/>
+		<property name="isbn" value="ABC123"/>
+		<property name="title" value="Head First Java"/>
+		<property name="author" value="Katthy"/>
+		<property name="price" value="600"/>
+	</bean>
+	<bean id="b2" class="com.bookapp.model.dao.Book">
+		<property name="id" value="02"/>
+		<property name="isbn" value="ABC723"/>
+		<property name="title" value="Servlet JSP Java"/>
+		<property name="author" value="Katthy"/>
+		<property name="price" value="700"/>
+	</bean>
+</beans>
