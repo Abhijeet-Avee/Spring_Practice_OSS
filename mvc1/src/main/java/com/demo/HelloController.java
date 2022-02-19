@@ -1,8 +1,5 @@
 package com.demo;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpSession;
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -13,80 +10,50 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-//@RequestMapping(path = "myapp")
+@RequestMapping(path="myapp")
 public class HelloController {
-
-	
-	@GetMapping(path="stock/tyre/{qty}/{grade}")
-	public ModelAndView hello6(@PathVariable(name = "qty") int qty, 
-			@PathVariable(name = "grade") String grade) {
-		System.out.println(qty);
-		System.out.println(grade);
-		ModelAndView mv=new ModelAndView();
-		mv.setViewName("hello");
-		mv.addObject("qty", qty);
-		return mv;
-	}
-	
-	
-	@GetMapping(path="foo5")
-	public ModelAndView hello5(ModelAndView mv, HttpServletRequest req, HttpSession session) {
-		System.out.println(req.getParameter("name"));
-		System.out.println(req.getParameter("city"));
-		mv.setViewName("hello");
-		mv.addObject("key", "ymsli champs!");
-		return mv;
-	}
 	
 	//@RequestParam
-	
-	//foo4?username=raj&city=delhi
-	@GetMapping(path="foo4")
+	//hello4?name=yash&city=raxaul
+	@GetMapping("hello4")
 	public ModelAndView hello4(ModelAndView mv,
-			@RequestParam(name = "name") String name,
-			@RequestParam(name="city") String city ) {
+				@RequestParam(name = "name") String name,
+				@RequestParam(name = "city") String city) {
 		System.out.println(name);
 		System.out.println(city);
-		mv.setViewName("hello");
-		mv.addObject("key", "ymsli champs!");
+		mv.setViewName("hellojsp");		//jsp page to redirect
+		mv.addObject("key",name+" "+city);
 		return mv;
 	}
 	
+	@GetMapping(path="stock/tyre/{count}/{company}")
+	public ModelAndView hello8(ModelAndView mv,
+			@PathVariable("count") int count,
+			@PathVariable("company") String cmp) {
+		System.out.println(count);
+		System.out.println(cmp);
+		mv.setViewName("hellojsp");		//jsp page to redirect
+		mv.addObject("key",count + " "+ cmp);
+		return mv;
+	}
 	
-	
-	
-	//ModelAndView vs Model vs ModelMap
-	
-	
-
-	@GetMapping(path="foo")
+	@GetMapping("hello") //url mapping
+	//complete path - /myapp/hello
 	public ModelAndView hello(ModelAndView mv) {
-		mv.setViewName("hello");
-		mv.addObject("key", "ymsli champs!");
+		mv.setViewName("hellojsp");		//jsp page to redirect
+		mv.addObject("key","spring mvc");
 		return mv;
 	}
 	
-	@GetMapping(path="foousingmodel")
-	public String helloUsingModel(Model mv) {
-		
-		mv.addAttribute("key", "ymsli champs! using model");
-		return "mypage";
+	@GetMapping("hellomodel")	//url mapping
+	public String helloModel(Model m) {
+		m.addAttribute("key","spring mvc by model");
+		return "hellomodeljsp"; //jsp page to redirect
 	}
 	
-
-	@GetMapping(path="foousingmodelmap")
-	public String helloUsingModelMap(ModelMap modelMap) {
-		
-		modelMap.addAttribute("key", "ymsli champs! using model");
-		return "mypage";
+	@GetMapping("hellomodelmap")
+	public String helloModelMap(ModelMap mm) {
+		mm.addAttribute("key","spring mvc by modelmap");
+		return "hellomodelmapjsp";
 	}
-	
-
-	@GetMapping("foo2")
-	public ModelAndView hello2(ModelAndView mv) {
-		mv.setViewName("hello");
-		mv.addObject("key", "ymsli champs 2!");
-		return mv;
-	}
-	
 }

@@ -1,10 +1,12 @@
 package com.bankapp.model.service.exceptions;
 
 public class NotYetImplementedException extends RuntimeException{
-	private static final long serialVersionUID = -4502833288878132096L;
+	
+	private static final long serialVersionUID = 1L;
 
-	public NotYetImplementedException(String message) {
-		super(message);
+	public NotYetImplementedException(String arg0) {
+		super(arg0);
 		
 	}
+	
 }

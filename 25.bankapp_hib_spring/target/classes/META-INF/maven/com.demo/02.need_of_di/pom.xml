@@ -59,6 +59,8 @@
 			<artifactId>aspectjrt</artifactId>
 			<version>1.6.9</version>
 		</dependency>
+
+	<!-- hibernate dependencies -->
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -70,7 +72,7 @@
 		</dependency>
 	</dependencies>
 
-
+	
 	<dependencyManagement>
 		<dependencies>
 			<dependency>

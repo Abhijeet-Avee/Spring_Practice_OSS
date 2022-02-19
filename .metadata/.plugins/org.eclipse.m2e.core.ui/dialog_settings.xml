@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ve00ym318\Documents\spring practice\26.bankapp_hib_spring_javaconfig"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -49,6 +50,8 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="mvc1"/>
+			<item value="mvc"/>
 			<item value="05_BankApp_xml"/>
 			<item value="04_DI_javaconfig"/>
 			<item value="03_DI_Annotations"/>
@@ -68,6 +71,14 @@
 		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
 	</section>
 	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>

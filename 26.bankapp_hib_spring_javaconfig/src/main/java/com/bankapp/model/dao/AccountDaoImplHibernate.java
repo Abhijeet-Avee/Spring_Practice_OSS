@@ -14,7 +14,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
 import com.bankapp.model.service.exceptions.MyAppAccountNotFoundException;
@@ -24,36 +23,32 @@ import com.bankapp.model.service.exceptions.MyAppAccountNotFoundException;
 public class AccountDaoImplHibernate implements AccountDao {
 
 	private SessionFactory sessionFactory;
-	
+
 	@Autowired
 	public AccountDaoImplHibernate(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
 
-	//helper method 
 	private Session getSession() {
 		return sessionFactory.getCurrentSession();
 	}
-	
+
 	@Override
 	public List<Account> getAll() {
 		return getSession().createQuery("from Account", Account.class).getResultList();
 	}
 
 	@Override
-	public Account getById(int id) {
-		
-		Account account=getSession().get(Account.class, id);
-		
-		if(account==null) {
-			throw new MyAppAccountNotFoundException("account with id "+ id +" is not found");	
-		}
-		return account;
+	public void update(Account account) {
+		getSession().merge(account);
 	}
 
 	@Override
-	public void update(Account account) {
-		getSession().merge(account);
+	public Account getById(int id) {
+		Account account = getSession().get(Account.class, id);
+		if (account == null)
+			throw new MyAppAccountNotFoundException("account with id " + id + " is not found");
+		return account;
 	}
 
 	@Override
@@ -63,7 +58,8 @@ public class AccountDaoImplHibernate implements AccountDao {
 
 	@Override
 	public void deleteAccount(int id) {
-		Account objectToDelete= getById(id);
+		Account objectToDelete = getById(id);
 		getSession().delete(objectToDelete);
 	}
+
 }

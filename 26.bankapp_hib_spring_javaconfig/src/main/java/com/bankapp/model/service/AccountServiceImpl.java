@@ -16,8 +16,7 @@ import com.bankapp.model.service.aspect.MyAppLogging;
 import com.bankapp.model.service.exceptions.MyAppAccountNotFoundException;
 import com.bankapp.model.service.exceptions.NotYetImplementedException;
 @Service(value = "accountService")
-@Transactional(noRollbackFor =
-{NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
+@Transactional(noRollbackFor = {NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED, readOnly = true)
 public class AccountServiceImpl implements AccountService {
 	
 	
@@ -53,9 +52,8 @@ public class AccountServiceImpl implements AccountService {
 		return dao.getById(id);
 	}
 
-	@Transactional(noRollbackFor =
-		{NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
 	@Override
+	@Transactional(noRollbackFor = {NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
 	public void transfer(int fromAccId, int toAccId, double amount) {
 		
 		Account fromAcc=dao.getById(fromAccId);
@@ -66,42 +64,39 @@ public class AccountServiceImpl implements AccountService {
 		
 		dao.update(fromAcc);
 		dao.update(toAcc);
-		
 		if(smsService!=null)
 		smsService.sendSms();
-		System.out.println("fund is transfred...");
-		
+		System.out.println("fund is transfred...");	
 	}
 	
+	@Transactional(noRollbackFor = {NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
 	@MyAppLogging
 	public void addAccount(Account account) {
 		dao.addAccount(account);
 	}
 	
 	@Override
+	@Transactional(noRollbackFor = {NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
 	public void deleteAccount(int id) {
 		dao.deleteAccount(id);
 	}
 
-	@Transactional(noRollbackFor =
-		{NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED, readOnly = true)
+	@Transactional(noRollbackFor = {NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
 	@Override
 	public void withdraw(int id, double amount) {
-		//logic
-		Account accountToUpdate= dao.getById(id);
+		Account accountToUpdate = dao.getById(id);
 		if(accountToUpdate==null)
-			throw new MyAppAccountNotFoundException("account with id: "+ id +" is not found");
+			throw new MyAppAccountNotFoundException("account with id: "+id+ " is not found");
 		accountToUpdate.setBalance(accountToUpdate.getBalance()-amount);
 		dao.update(accountToUpdate);
 	}
 
-	@Transactional(noRollbackFor =
-		{NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED, readOnly = true)
 	@Override
+	@Transactional(noRollbackFor = {NotYetImplementedException.class}, isolation = Isolation.READ_COMMITTED)
 	public void deposit(int id, double amount) {
-		Account accountToUpdate= dao.getById(id);
+		Account accountToUpdate = dao.getById(id);
 		if(accountToUpdate==null)
-			throw new MyAppAccountNotFoundException("account with id: "+ id +" is not found");
+			throw new MyAppAccountNotFoundException("account with id: "+id+ " is not found");
 		accountToUpdate.setBalance(accountToUpdate.getBalance()+amount);
 		dao.update(accountToUpdate);
 	}

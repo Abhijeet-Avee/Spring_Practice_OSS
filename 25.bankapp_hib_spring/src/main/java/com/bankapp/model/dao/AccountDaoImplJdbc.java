@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
-@Repository
+//@Repository
 //@Primary
 public class AccountDaoImplJdbc implements AccountDao {
 

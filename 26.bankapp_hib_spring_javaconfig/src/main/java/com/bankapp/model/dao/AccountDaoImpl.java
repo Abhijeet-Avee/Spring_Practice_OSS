@@ -3,7 +3,7 @@ package com.bankapp.model.dao;
 import java.util.*;
 
 import org.springframework.stereotype.Repository;
-@Repository
+//@Repository
 public class AccountDaoImpl implements AccountDao {
 	private Map<Integer, Account> accounts;
 	

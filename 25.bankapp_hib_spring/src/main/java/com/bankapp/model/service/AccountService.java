@@ -12,5 +12,4 @@ public interface AccountService {
 	public void deleteAccount(int id);
 	public void withdraw(int id, double amount);
 	public void deposit(int id, double amount);
-	
 }
