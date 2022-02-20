@@ -1,0 +1,36 @@
+INFO  | 2022-02-20 12:04:45 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 12:04:45 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 12:04:45 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 12:04:45 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 12:06:19 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 12:06:19 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 12:06:19 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 12:06:20 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 12:07:07 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 12:07:07 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 12:07:07 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 12:07:07 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 12:10:25 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 12:10:25 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 12:10:25 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 12:10:26 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 12:10:51 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 12:10:51 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 12:10:51 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 12:10:51 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 12:10:52 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2022-02-20 12:12:35 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 12:12:35 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 12:12:35 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 12:12:36 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 12:12:37 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2022-02-20 22:57:14 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 22:57:14 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 22:57:14 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 22:57:15 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 22:57:15 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory
+INFO  | 2022-02-20 22:59:14 | [main] hibernate.Version (Version.java:45) - HHH000412: Hibernate Core {5.2.9.Final}
+INFO  | 2022-02-20 22:59:14 | [main] cfg.Environment (Environment.java:213) - HHH000206: hibernate.properties not found
+INFO  | 2022-02-20 22:59:14 | [main] java.JavaReflectionManager (JavaReflectionManager.java:66) - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  | 2022-02-20 22:59:14 | [main] dialect.Dialect (Dialect.java:157) - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+INFO  | 2022-02-20 22:59:15 | [main] internal.QueryTranslatorFactoryInitiator (QueryTranslatorFactoryInitiator.java:47) - HHH000397: Using ASTQueryTranslatorFactory

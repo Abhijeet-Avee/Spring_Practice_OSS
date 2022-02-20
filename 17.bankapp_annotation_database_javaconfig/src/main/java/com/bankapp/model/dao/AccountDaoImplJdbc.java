@@ -7,6 +7,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Repository;
 @Repository
@@ -15,6 +16,7 @@ public class AccountDaoImplJdbc implements AccountDao {
 
 	private DataSource dataSource;
 
+	@Autowired
 	public AccountDaoImplJdbc(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
