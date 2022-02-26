@@ -46,12 +46,14 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.traineeapp"/>
 			<item value="com.bookapp"/>
 			<item value="com.demo"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="TraineeMgt"/>
 			<item value="bookapp_di_xml"/>
 			<item value="mvc1"/>
 			<item value="mvc"/>
