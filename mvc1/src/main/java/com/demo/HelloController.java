@@ -15,7 +15,7 @@ public class HelloController {
 	
 	//@RequestParam
 	//hello4?name=yash&city=raxaul
-	@GetMapping("hello4")
+	@GetMapping("hello4")							//...myapp/hello4
 	public ModelAndView hello4(ModelAndView mv,
 				@RequestParam(name = "name") String name,
 				@RequestParam(name = "city") String city) {

@@ -19,10 +19,12 @@ public class BookServiceImpl implements BookService{
 		this.dao = dao;
 	}
 
+	
 	public List<Book> getAllBooks() {
 		return dao.getAllBooks();
 	}
 
+	
 	public Book addBook(Book book) {
 		return dao.addBook(book);
 	}

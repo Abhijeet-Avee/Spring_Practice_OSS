@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="C:\Users\ve00ym318\Documents\spring practice\mvc1"/>
+			<item value="C:\Users\ve00ym318\Documents\spring practice\mvc4-jsr303-interceptors\pom.xml"/>
 			<item value="C:\Users\ve00ym318\Documents\spring practice\11_bean_life_cycle_aware"/>
 			<item value="C:\Users\ve00ym318\Documents\spring practice\26.bankapp_hib_spring_javaconfig"/>
 		</list>
@@ -46,22 +48,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.traineeapp"/>
 			<item value="com.bookapp"/>
-			<item value="com.demo"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="TraineeMgt"/>
-			<item value="bookapp_di_xml"/>
-			<item value="mvc1"/>
-			<item value="mvc"/>
-			<item value="05_BankApp_xml"/>
-			<item value="04_DI_javaconfig"/>
-			<item value="03_DI_Annotations"/>
-			<item value="01_Need_of_Spring"/>
-			<item value="02_Need_of_DI"/>
+			<item value="bookapp_mvc_xml"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

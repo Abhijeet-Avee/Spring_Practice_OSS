@@ -29,6 +29,7 @@ public class BookConfig {
 		return sessionFactory;
 	}
 	
+	
 	private Properties getHibProperties() {
 		Properties prop = new Properties();
 		prop.setProperty("hibernate.hbm2ddl.auto","update");
